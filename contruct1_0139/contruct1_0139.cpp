@@ -18,4 +18,10 @@ public:
 	Mahasiswa(string iNama) {nama = iNama;}
 	Mahasiswa(int iNim, string iNama) { nim = iNim; nama = iNama; }
 
-	
+	void cetak() {
+		cout << endl << " Nim = " << nim << endl;
+		cout << " Nama = " << nama << endl;
+	}
+
+};
+
