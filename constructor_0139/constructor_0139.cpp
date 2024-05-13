@@ -17,3 +17,4 @@ public:
 	}
 };
 
+int mahasiswa::nim = 10;
