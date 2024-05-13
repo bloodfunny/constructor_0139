@@ -5,7 +5,7 @@ using namespace std;
 class mahasiswa
 {
 private:
-	static int nim;
+	static long long int nim;
 public:
 	int id;
 	string nama;
@@ -21,7 +21,7 @@ public:
 
 };
 
-int mahasiswa::nim = 0;
+long long int mahasiswa::nim = 20230140139;
 
 void mahasiswa::setID()
 {
@@ -34,5 +34,23 @@ void mahasiswa::printALL()
 	cout << "Nama = " << nama << endl;
 	cout << endl;
 
+}
+
+int main()
+{
+	mahasiswa mhs1("Rafiansyah");
+	mahasiswa mhs2("Rinaldi");
+	mahasiswa::setNim(11);
+	mahasiswa mhs3("Rafi ");
+	mahasiswa mhs4("Galaktikos");
+
+	mhs1.printALL();
+	mhs2.printALL();
+	mhs3.printALL();
+	mhs4.printALL();
+
+	cout << "Akses dari luar objek =" << mahasiswa::getNim() << endl;
+
+	return 0;
 }
 
